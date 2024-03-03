@@ -1,0 +1,1 @@
+<img src="link_to_the_picture" alt="Закрыть окно" onclick="window.close();" /> для закрытия вкладки

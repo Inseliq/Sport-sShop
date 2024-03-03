@@ -83,13 +83,13 @@ body {
 .main {
   background-color: whitesmoke;
   background: whitesmoke;
-  padding-top: 80px;
+  padding-top: 50px;
   padding-bottom: 115px;
 }
 
 .main-section {
   margin: 0;
-  margin-bottom: 70px;
+  margin-bottom: 50px;
   font-weight: 700;
   font-size: 46px;
   line-height: 130%;
@@ -124,7 +124,7 @@ body {
   font-weight: 700;
   font-size: 24px;
   margin-bottom: 0;
-  margin-top: 10px;
+  margin-top: 0px;
 }
 .footer-copyright p {
   font-weight: 600;
@@ -136,6 +136,10 @@ body {
   font-weight: 600;
   font-size: 16px;
   line-height: 1.3;
+}
+
+#img-p {
+  margin-top: 10px;
 }
 
 .footer-icons-row {
@@ -226,7 +230,7 @@ body {
   }
 }
 
-.card {
+.cardas {
   margin-bottom: 30px;
   padding: 20px;
   width: 540px;
@@ -248,7 +252,7 @@ body {
   color: #7e9ec9;
 }
 
-.modal-header {
+.modal-headers {
   align-items: baseline;
   display: flex;
   justify-content: space-between;
@@ -273,7 +277,7 @@ body {
   margin-top: 21px;
 }
 
-.modal-wrapper {
+.modal-wrapperrr {
   align-items: center;
   background: rgba(0, 0, 0, 0.6);
   bottom: 0;
@@ -294,13 +298,13 @@ body {
     opacity: 1;
     visibility: visible;
 
-    .modal-body {
+    .modals-body {
       opacity: 1;
       transform: translateY(1);
     }
   }
 
-  .modal-body {
+  .modals-body {
     max-width: 500px;
     opacity: 0;
     transform: translateY(-100px);
@@ -315,7 +319,7 @@ body {
   font-weight: 300;
 }
 
-.outside-trigger {
+.outside-triggered {
   bottom: 0;
   cursor: default;
   left: 0;
@@ -346,20 +350,100 @@ body {
 }
 
 .carousel-item-next, .carousel-item-prev, .carousel-item.active {
-display: flex !important; 
-justify-content: center !important; 
+display: flex !important;
+justify-content: left !important;
+
 }
 
  .control-img {
   weight: 300px;
   height: 300px;
+  margin-left: 125px;
   /* margin-left: auto;
   margin-right: auto; */
-} 
+}
 
 .carousel-control-next-icon, .carousel-control-prev-icon, .carousel-indicators {
   filter: brightness(0) saturate(100%) invert(22%) sepia(97%) saturate(0%) hue-rotate(198deg) brightness(97%) contrast(80%);
 }
 .visually-hidden, .carousel-indicators .active{
   filter: brightness(0) saturate(100%) invert(13%) sepia(0%) saturate(382%) hue-rotate(210deg) brightness(101%) contrast(101%);
+}
+
+.text-tovars {
+  color: black;
+  text-align: left;
+}
+
+.texts-info {
+  color: black;
+  text-align: left;
+}
+
+a.buy-bt:active {
+  text-decoration: none;
+  color: red;
+} /* активная/посещенная ссылка */
+a.buy-bt:hover{
+  text-decoration: none;
+  color: black;
+}  /* при наведении */
+a.buy-bt {
+  text-decoration: none;
+  color: grey;
+}
+/* rgba(0, 26, 52, 0.6);  - цвет 008 */
+
+.buy-botton-image {
+width: 32px;
+color: black;
+}
+
+.carousel-functions {
+display: block !important;
+position: absolute !important;
+width: 540px;
+margin-left: 450px;
+padding-top: 10px;
+padding-bottom: 5px;
+}
+
+.ul-protein {
+list-style: none;
+}
+
+.ul-protein li::before {
+  content: "\2022"; /* юникод точки */
+  color: orange; /* Менять цвет */
+  font-weight: bold; /* Менять жирность */
+  display: inline-block; /* Расстояние между точкой и текстом */
+  width: 1em; /* Задать значение расстояния */
+}
+
+.text-buy-button {
+  text-align: right;
+}
+
+.ul-bcaa {
+list-style: none;
+}
+
+.ul-bcaa li::before {
+  content: "\2022";
+  color: blueviolet;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+}
+
+.ul-creatin {
+list-style: none;
+}
+
+.ul-creatin li::before {
+  content: "\2022";
+  color: green;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
 }
