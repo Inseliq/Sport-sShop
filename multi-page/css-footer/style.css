@@ -8,10 +8,24 @@ body {
   color: black;
 }
 
-.container {
+.Container {
   width: 1100px;
   margin-left: auto;
   margin-right: auto;
+}
+
+/* .project {
+  text-align: center;
+} */
+
+.footer {
+  position: relative;
+  width: 100%;
+  height: 25vh;
+  padding-top: 45px;
+  padding-bottom: 45px;
+  background: #1e4776;
+  color: white;
 }
 
 .card {
@@ -22,21 +36,12 @@ body {
   box-shadow: 0px 10px 40px rgba(126, 155, 189, 0.35);
 }
 
-.card p {
-  margin: 0;
-  font-style: 16px;
-  line-height: 130%;
-  color: black;
+.project-img {
+  margin-top: 20px;
 }
 
-.footer {
-  position: relative;
-  width: 100%;
-  height: 25vh;
-  padding-top: 15px;
-  padding-bottom: 30px;
-  background: #1e4776;
-  color: white;
+.project-description {
+ text-align: justify;
 }
 
 .footer-row {
@@ -44,30 +49,12 @@ body {
   flex-direction: row;
   justify-content: space-between;
 }
-.i-col {
-  max-width: 350px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 40px;
-}
-
-.i-cont p {
-  margin: 15px 0;
-  font-size: 15px;
-  line-height: 1.3;
-}
 
 .footer-col {
   max-width: 350px;
   flex-grow: 1;
-  margin-right: auto;
-  margin-left: auto;
 }
 
-.mrgn {
-  margin-left: auto;
-  margin-right: auto;
-}
 .footer-copyright {
   color: #7e9ec9;
   line-height: 1.3;
@@ -76,8 +63,8 @@ body {
 .footer-coppyright-name {
   font-weight: 700;
   font-size: 24px;
-  margin-top: 9px;
-  margin-bottom: 15px;
+  margin-bottom: 0;
+  margin-top: 5px;
 }
 .footer-copyright p {
   font-weight: 600;
@@ -88,8 +75,12 @@ body {
 .footer-icons p {
   font-weight: 600;
   font-size: 16px;
-  line-height: 1.3;
+  line-height: 1.0;
 }
+
+/* #img-p {
+  margin-top: 10px;
+} */
 
 .footer-icons-row {
   display: flex;
@@ -108,6 +99,7 @@ body {
   padding-right: 30px;
   color: white;
   line-height: 3.2;
+  font-size: 16px;
   font-weight: 700;
   text-transform: uppercase;
   text-decoration: none;
@@ -123,6 +115,7 @@ body {
   position: relative;
   z-index: 0;
   border-radius: 10px;
+  margin-top: 4px;
 }
 
 .glow-on-hover:before {
@@ -178,6 +171,13 @@ body {
   }
 }
 
+.footer-col {
+  max-width: 350px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 40px;
+}
+
 .footer-contacts p {
   margin: 15px 0;
   font-size: 15px;
@@ -185,7 +185,7 @@ body {
   color: #7e9ec9;
 }
 
-.modal-header {
+.modal-headers {
   align-items: baseline;
   display: flex;
   justify-content: space-between;
@@ -206,7 +206,11 @@ body {
   }
 }
 
-.modal-wrapper {
+.foot-cops {
+  margin-top: 21px;
+}
+
+.modal-wrapperrr {
   align-items: center;
   background: rgba(0, 0, 0, 0.6);
   bottom: 0;
@@ -227,13 +231,13 @@ body {
     opacity: 1;
     visibility: visible;
 
-    .modal-body {
+    .modals-body {
       opacity: 1;
       transform: translateY(1);
     }
   }
 
-  .modal-body {
+  .modals-body {
     max-width: 500px;
     opacity: 0;
     transform: translateY(-100px);
@@ -248,7 +252,7 @@ body {
   font-weight: 300;
 }
 
-.outside-trigger {
+.outside-triggered {
   bottom: 0;
   cursor: default;
   left: 0;
@@ -257,61 +261,26 @@ body {
   top: 0;
 }
 
+.card p {
+  margin: 0;
+  font-style: 16px;
+  line-height: 130%;
+  color: black;
+}
+
 .button__link {
   text-decoration: none;
 }
 
-.project {
-  position: relative;
-  width: 100%;
-  height: 75vh;
-
+#fills {
   display: flex;
-  flex-direction: column;
-
   justify-content: center;
-  align-items: center;
-  background-image: url("../img/icon/full-head.jpg");
-  padding: 12px 0 20px 0;
-  text-align: center;
-  filter: grayscale(35%);
-}
-
-.project-header {
-  font-weight: bold;
-  font-size: 46px;
-  line-height: 1.3;
-}
-
-.project-description {
-  margin-left: auto;
-  margin-right: auto;
-  width: 800px;
-}
-
-#cards {
-  color: black;
-  margin: 0;
-  font-style: 16px;
-  line-height: 130%;
-}
-.text-donat {
-display: flex;
-justify-content: center;
-align-items: center;
 }
 
 .rovno-button {
   display: flex;
-  width: 800px;
-  height: 150px;
+  width: 1000px;
+  height: 100px;
 justify-content: center;
 align-items: center;
 }
-
-.img-donat {
-  margin-left: 10px;
-  margin-top: -5px;
-  vertical-align: middle;
-}
-
