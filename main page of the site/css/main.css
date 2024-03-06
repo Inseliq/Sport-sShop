@@ -5,7 +5,8 @@
 body {
   margin: 0;
   font-family: "Montserrat", sans-serif;
-  color: black;
+  /* color: black; */
+  color: rgb(214, 222, 225) !important;
 }
 
 .сontainer {
@@ -97,7 +98,7 @@ body {
   font-size: 46px;
   line-height: 130%;
   text-align: center;
-  color: black;
+  color: rgb(214, 222, 225);
 }
 
 .footer {
@@ -374,20 +375,22 @@ justify-content: left !important;
   margin-right: auto; */
 }
 
-.carousel-control-next-icon, .carousel-control-prev-icon, .carousel-indicators {
-  filter: brightness(0) saturate(100%) invert(22%) sepia(97%) saturate(0%) hue-rotate(198deg) brightness(97%) contrast(80%);
+/*
+ .carousel-control-next-icon, .carousel-control-prev-icon, .carousel-indicators {
+   filter: brightness(0) saturate(100%) invert(22%) sepia(97%) saturate(0%) hue-rotate(198deg) brightness(97%) contrast(80%); 
 }
 .visually-hidden, .carousel-indicators .active{
-  filter: brightness(0) saturate(100%) invert(13%) sepia(0%) saturate(382%) hue-rotate(210deg) brightness(101%) contrast(101%);
-}
+   filter: brightness(0) saturate(100%) invert(13%) sepia(0%) saturate(382%) hue-rotate(210deg) brightness(101%) contrast(101%); 
+} 
+ -- Это старые стрелочки -- */
 
 .text-tovars {
-  color: black;
+  color: rgb(214, 222, 225);
   text-align: left;
 }
 
 .texts-info {
-  color: black;
+  color: rgb(214, 222, 225);;
   text-align: left;
   margin-bottom: 0px;
   width: 600px;
@@ -399,11 +402,11 @@ a.buy-bt:active {
 } /* активная/посещенная ссылка */
 a.buy-bt:hover{
   text-decoration: none;
-  color: black;
+  color: whitesmoke;
 }  /* при наведении */
 a.buy-bt {
   text-decoration: none;
-  color: grey;
+  color: rgb(199, 199, 199);;
 }
 /* rgba(0, 26, 52, 0.6);  - цвет 008 */
 
