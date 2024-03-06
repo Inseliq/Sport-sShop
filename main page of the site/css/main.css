@@ -9,14 +9,14 @@ body {
 }
 
 .сontainer {
-  background-color: whitesmoke;
+  background-color: rgb(49, 51, 56);
   width: 1440px;
   margin-left: auto;
   margin-right: auto;
 }
 
 .carusels {
-  background-color:whitesmoke;
+  background-color: rgb(49, 51, 56);
 }
 
 .Container {
@@ -84,8 +84,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: whitesmoke;
-  background: whitesmoke;
+  background-color: rgb(49, 51, 56);
   position: relative;
   width: 100%;
   height: 100vh;
@@ -359,6 +358,7 @@ body {
 .carousel-item-next, .carousel-item-prev, .carousel-item.active {
 display: flex !important;
 justify-content: left !important;
+  bac
 
 }
 
