@@ -26,11 +26,19 @@ body {
   margin-right: auto;
 }
 
+/*
+.head-max {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+} */
+
 .header,
 .blur {
   position: relative;
   width: 100%;
-  height: 100vh;
+  height: 15vh;
 
   display: flex;
   flex-direction: column;
@@ -53,9 +61,9 @@ body {
 }
 
 .header-title {
-  margin-bottom: 25px;
+  margin-bottom: 10px;
   font-weight: 700;
-  font-size: 56px;
+  font-size: 72px;
   line-height: 130%;
   text-align: center;
 
@@ -72,13 +80,6 @@ body {
   text-transform: uppercase;
 
   color: rgb(28, 24, 24);
-}
-
-.header-arrow svg {
-  position: absolute;
-  bottom: 25px;
-  left: 50%;
-  transform: translate(-50%, 0);
 }
 
 .main {
@@ -99,6 +100,113 @@ body {
   line-height: 130%;
   text-align: center;
   color: rgb(214, 222, 225);
+}
+
+.type-to-header {
+  position: relative;
+  width: 100%;
+  height: 85vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-top: 5vh;
+  align-items: center;
+  background-image: url("../../fotos/sport-bgcolor.png");
+  background-size: cover;
+  background-position: center;
+filter: grayscale(35%);
+opacity: 0.9;
+}
+
+.type-to-header-title-1 {
+width: 1100px;
+text-align: justify;
+text-indent: 2.0vw;
+}
+
+.type-to-header-subtitle-1 {
+color: rgb(255, 255, 255) !important;
+text-shadow: 3px 4px 5px black;
+}
+
+.type-to-header-title-2 {
+width: 1100px;
+text-align: justify;
+text-indent: 2.0vw;
+}
+
+.type-to-header-subtitle-2 {
+margin-top: 5vh;
+  color: rgb(255, 255, 255) !important;
+text-shadow: 3px 4px 5px black;
+margin-bottom: 5vh;
+}
+
+.type-to-head-arrow {
+position: absolute;
+display: flex;
+bottom: 5vh;
+}
+
+.image-button  {
+  text-decoration: none;
+  width:64px;
+  height:64px;
+  border:none;
+  background: none;
+  background-image:url("../css/arrow/arrow-white.png");
+  background-size:cover;
+}
+
+.image-button:hover  {
+  text-decoration: none;
+  width:64px;
+  height:64px;
+  border:none;
+  background: none;
+  background-image:url("../css/arrow/arrow-whitesmoke.png");
+  background-size:cover;
+}
+
+.image-button:active  {
+  text-decoration: none;
+  width:64px;
+  height:64px;
+  border:none;
+  background: none;
+  background-image:url("../css/arrow/arrow.png");
+  background-size:cover;
+}
+
+.type-to-header-konsult {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+}
+
+.button-to-konst {
+border: 5px solid rgb(74, 74, 74);
+border-radius: 25px;
+background: rgb(74, 74, 74);
+color:rgb(220, 220, 220);
+font-weight: 500;
+}
+
+.button-to-konst:hover {
+border: 5px solid rgb(171, 171, 171);
+border-radius: 25px;
+background: rgb(171, 171, 171);
+color: rgb(37, 37, 37);
+font-weight: 700;
+}
+
+.button-to-konst:active {
+border: 5px solid rgb(255, 255, 255);
+border-radius: 25px;
+background: rgb(255, 255, 255);
+color: rgb(0, 0, 0);
+font-weight: 900;
 }
 
 .footer {
@@ -359,8 +467,6 @@ body {
 .carousel-item-next, .carousel-item-prev, .carousel-item.active {
 display: flex !important;
 justify-content: left !important;
-  bac
-
 }
 
  .control-img-baton {
@@ -377,11 +483,11 @@ justify-content: left !important;
 
 /*
  .carousel-control-next-icon, .carousel-control-prev-icon, .carousel-indicators {
-   filter: brightness(0) saturate(100%) invert(22%) sepia(97%) saturate(0%) hue-rotate(198deg) brightness(97%) contrast(80%); 
+   filter: brightness(0) saturate(100%) invert(22%) sepia(97%) saturate(0%) hue-rotate(198deg) brightness(97%) contrast(80%);
 }
 .visually-hidden, .carousel-indicators .active{
-   filter: brightness(0) saturate(100%) invert(13%) sepia(0%) saturate(382%) hue-rotate(210deg) brightness(101%) contrast(101%); 
-} 
+   filter: brightness(0) saturate(100%) invert(13%) sepia(0%) saturate(382%) hue-rotate(210deg) brightness(101%) contrast(101%);
+}
  -- Это старые стрелочки -- */
 
 .text-tovars {
@@ -391,9 +497,10 @@ justify-content: left !important;
 
 .texts-info {
   color: rgb(214, 222, 225);;
-  text-align: left;
+  text-align: justify;
   margin-bottom: 0px;
   width: 600px;
+
 }
 
 a.buy-bt:active {
@@ -406,7 +513,28 @@ a.buy-bt:hover{
 }  /* при наведении */
 a.buy-bt {
   text-decoration: none;
-  color: rgb(199, 199, 199);;
+  color: rgb(199, 199, 199);
+}
+
+a.buy-bat:active {
+  text-decoration: none;
+  color: red;
+} /* активная/посещенная ссылка */
+a.buy-bat:hover{
+  text-decoration: none;
+  color: whitesmoke;
+  background-color: rgb(102, 148, 32);
+  border: 7px solid;
+  border-color: rgb(102, 148, 32);
+  border-radius: 15px;
+}  /* при наведении */
+a.buy-bat {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  background-color: rgb(65, 95, 20);
+  border: 7px solid;
+  border-color: rgb(65, 95, 20);
+  border-radius: 15px;
 }
 /* rgba(0, 26, 52, 0.6);  - цвет 008 */
 
@@ -443,17 +571,25 @@ list-style: none;
 .control-text-button {
   margin-top: 25px;
   display:flex;
+  align-items: center;
   width: 750px;
+  font-size: 18px;
 }
 
 .text-buy-bt {
   text-align: left;
-  width: 200px;
+  width: 250px;
 }
 
 .text-buy-button {
   text-align: right;
-  width: 550px;
+  width: 500px;
+}
+
+.last_cent {
+  margin-bottom: 5px;
+  padding-right: 45px;
+  text-decoration: line-through;
 }
 
 .ul-bcaa {
