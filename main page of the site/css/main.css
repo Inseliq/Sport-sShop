@@ -11,9 +11,11 @@ body {
 
 .сontainer {
   background-color: rgb(49, 51, 56);
-  width: 1440px;
-  margin-left: auto;
-  margin-right: auto;
+    width: 100vw;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
 }
 
 .carusels {
@@ -549,12 +551,13 @@ color: black;
 }
 
 .carousel-functions {
-display: block !important;
-position: absolute !important;
-width: 640px;
-margin-left: 500px;
+display: flex !important;
+position: relative !important;
+width: 65vw;
+/* margin-left: 500px; */
 padding-top: 10px;
 padding-bottom: 5px;
+flex-direction: column;
 }
 
 .ul-protein {
@@ -573,18 +576,26 @@ list-style: none;
   margin-top: 25px;
   display:flex;
   align-items: center;
-  width: 750px;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 750px;
   font-size: 18px;
 }
 
 .text-buy-bt {
   text-align: left;
-  width: 250px;
+  /* width: 250px; */
+  display: flex;
+  align-items: flex-start;
 }
 
 .text-buy-button {
   text-align: right;
-  width: 500px;
+  position: relative;
+  /* width: 500px; */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
 
 .last_cent {
