@@ -121,9 +121,10 @@ opacity: 0.9;
 }
 
 .type-to-header-title-1 {
-width: 1100px;
-text-align: justify;
-text-indent: 2.0vw;
+width: 75vw;
+    text-align: justify;
+    text-indent: 2vw;
+    display: flex;
 }
 
 .type-to-header-subtitle-1 {
@@ -134,9 +135,10 @@ margin-top: 3vh;
 }
 
 .type-to-header-title-2 {
-width: 1100px;
-text-align: justify;
-text-indent: 2.0vw;
+width: 75vw;
+    text-align: justify;
+    text-indent: 2vw;
+    display: flex;
 }
 
 .type-to-header-subtitle-2 {
