@@ -46,7 +46,7 @@ body {
   justify-content: center;
   align-items: center;
 
-  background-image: url("../img/header/full-head.jpg");
+  background-image: url("../../fotos/front-fotos.jpg");
 
   background-size: cover;
   background-position: center;
@@ -67,7 +67,7 @@ body {
   line-height: 130%;
   text-align: center;
 
-  color: rgb(132, 2, 2);
+  color: rgb(204, 0, 0);
 }
 
 .header-subtitle {
@@ -127,6 +127,8 @@ text-indent: 2.0vw;
 .type-to-header-subtitle-1 {
 color: rgb(255, 255, 255) !important;
 text-shadow: 3px 4px 5px black;
+margin-bottom: 8vh;
+margin-top: 3vh;
 }
 
 .type-to-header-title-2 {
@@ -136,10 +138,9 @@ text-indent: 2.0vw;
 }
 
 .type-to-header-subtitle-2 {
-margin-top: 5vh;
-  color: rgb(255, 255, 255) !important;
+color: rgb(255, 255, 255) !important;
 text-shadow: 3px 4px 5px black;
-margin-bottom: 5vh;
+margin-bottom: 8vh;
 }
 
 .type-to-head-arrow {
