@@ -139,6 +139,7 @@ width: 75vw;
     text-align: justify;
     text-indent: 2vw;
     display: flex;
+  flex-direction: column;
 }
 
 .type-to-header-subtitle-2 {
