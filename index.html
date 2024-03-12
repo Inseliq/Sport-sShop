@@ -15,10 +15,38 @@
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
 		integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
 		crossorigin="anonymous"></script>
-		<div class="header">
+<nav class="navbar-main-controller">
+  <div class="navbar-control-containers">
+    <div><a class="navbar-control-main" href="#sportshop">SportShop</a></div>
+    <div><a target="_blank" class="navbar-control-konsultation" href="./secondary page of the site/konusult.html">Консультация</a></div>
+		<div><a class="navbar-control-full-tovars" href="#syda">Все товары</a></div>
+		<div><a class="navbar-control-comments" href="#comment">Отзывы</a></div>
+  	  <div><a class="nav-link navbar-control-full-list" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Список товаров</a>
+				<ul class="dropdown-menu">
+					<li><a class="dropdown-item" href="#syda">Протеин</a></li>
+					<li><a class="dropdown-item" href="">BCAA</a></li>
+					<li><a class="dropdown-item" href="#syda"><button class="full-none-button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+							aria-label="Slide 3">Креатин</button></a></li>
+					<li><a class="dropdown-item" href="#">Энергетик</a></li>
+					<li><a class="dropdown-item" href="#">Аминокислота</a></li>
+					<li><a class="dropdown-item" href="#">Жиросжигатель</a></li>
+					<li><a class="dropdown-item" href="#">Витамины</a></li>
+					<li><a class="dropdown-item" href="#">Энергетический батончик</a></li>
+					<li><a class="dropdown-item" href="#">Гейнер</a></li>
+					<li><a class="dropdown-item" href="#">Предтренировочный комплекс</a></li>
+				</ul>
+			</div>
+    <div>
+			<form class="d-flex" role="search">
+				<input class="form-control me-2" type="search" placeholder="Поиск" aria-label="Search">
+				<button class="btn btn-outline-success" type="submit">Поиск</button>
+				</form>
+		</div>
+  </div>
+</nav>
+		<div class="header" id="sportshop">
 			<div class="blur">
 				<h1 class="header-title">SportShop</h1>
-				<!-- <p class="header-subtitle">Добро пожаловать в наш спортивный магазин</p> -->
 			</div>
 		</div>
 		<div class="type-to-header">
@@ -40,7 +68,7 @@
 			<h2 class="main-section" >Список наших товаров:</h2>
 			 <div class="carusels" > <!-- Карусель товаров для ПК - Ноутбук - Планшет -->
 				<div id="carouselExampleCaptions" class="carousel slide">
-					 <div class="carousel-indicators"> <!-- DataBase -->
+					 <div class="carousel-indicators"> <!-- DataBaseCarousel -->
 						<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
 							class="active" aria-current="true" aria-label="Slide 1"></button>
 						<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
@@ -63,7 +91,7 @@
 							aria-label="Slide 10"></button>
 					</div>
 					<div class="carousel-inner">
-						<div class="carousel-item active"><!-- Протеин -->
+						<div class="carousel-item active" id="bd1"><!-- Протеин -->
 							<img src="./fotos/front-img.png" class="control-img" class="d-block w-100" alt="..." />
 							<div class="carousel-functions">
 								<h5 class="text-tovars">Протеин.</h5>
@@ -97,15 +125,15 @@
 									<li>Выполнять многие другие функции организма.</li>
 								</ul>
 								<div class="control-text-button">
-									<span class="text-buy-bt"><a target="_blank" class="buy-bt" href="./multi-page/Protein/protein-info.html">ПОДРОБНЕЕ О ПРОДУКТЕ</a></span><span class="text-buy-button"><p class="last_cent">1900 Руб.</p><a target="_blank" href="./other/donate.html" class="buy-bt buy-bat">1100 Руб. КУПИТЬ</a>
-									</span>
+									<div class="text-buy-bt"><a target="_blank" class="buy-bt" href="./multi-page/Protein/protein-info.html">ПОДРОБНЕЕ О ПРОДУКТЕ</a></div><div class="text-buy-button"><p class="last_cent">1900 Руб.</p><a target="_blank" href="./other/donate.html" class="buy-bt buy-bat">1100 Руб. КУПИТЬ</a>
+								</div>
 								</div>
 								</p>
 							</div>
 						</div>
-						<div class="carousel-item"> <!-- Креатин -->
+						<div class="carousel-item" id="bd3"> <!-- Креатин -->
 							<img src="./fotos/creatine-front.png" class="control-img" class="d-block w-100" alt="..." />
-							<div class="carousel-functions">
+							<div class="carousel-functions-kr">
 								<h5 class="text-tovars">Креатин.</h5>
 								<p class="texts-info">
 									Азотсодержащее вещество, которое способствует:
@@ -133,8 +161,8 @@
 									Энергетик стимулирует кровообращение, снимает усталость, повышает концентрацию
 									внимания.
 																<div class="control-text-button">
-									<span class="text-buy-bt"><a target="_blank" class="buy-bt" href="./multi-page/Protein/protein-info.html">ПОДРОБНЕЕ О ПРОДУКТЕ</a></span><span class="text-buy-button"><p class="last_cent"></p><a target="_blank" href="./other/donate.html" class="buy-bt buy-bat">999 Руб. КУПИТЬ</a>
-									</span>
+									<div class="text-buy-bt"><a target="_blank" class="buy-bt" href="./multi-page/Protein/protein-info.html">ПОДРОБНЕЕ О ПРОДУКТЕ</a></div><div class="text-buy-button"><p class="last_cent"></p><a target="_blank" href="./other/donate.html" class="buy-bt buy-bat">999 Руб. КУПИТЬ</a>
+									</div>
 								</div>
 								</p>
 							</div>
@@ -202,7 +230,7 @@
 						</div>
 						<div class="carousel-item"> <!-- Гейнер -->
 							<img src="./fotos/gainer-front.png" class="control-img" class="d-block w-100" alt="..." />
-							<div class="carousel-functions">
+							<div class="carousel-functions-gn">
 								<h5 class="text-tovars">Гейнер.</h5>
 								<p class="texts-info">
 									Гейнеры содержат большое количество высококачественных углеводов и протеина, иногда в состав этой добавки входят витамины и креатин. Они необходимы для быстрого наращивания мышечной массы, увеличения веса и улучшения силовых показателей. Эти смеси отличаются высокой калорийностью.
@@ -226,7 +254,7 @@
 									<li>Стимулирует выработку белка;</li>
 									<li>Положительно влияет на внимание, повышает концентрацию;</li>
 								</ul>
-																<div class="control-text-button">
+																<div class="control-text-button-pk">
 									<span class="text-buy-bt"><a target="_blank" class="buy-bt" href="./multi-page/Protein/protein-info.html">ПОДРОБНЕЕ О ПРОДУКТЕ</a></span><span class="text-buy-button"><p class="last_cent">9999 Руб.</p><a target="_blank" href="./other/donate.html" class="buy-bt buy-bat">6129 Руб. КУПИТЬ</a>
 									</span>
 								</div>
@@ -248,6 +276,62 @@
 			</div>
 		</div>
 	</div>
+<div class="comment" id="comment">
+<div class="comment-contain">
+	<div class="text-content">
+		<h2 class="main-section wv-100" >Отзывы о нас:</h2>
+	</div>
+		<div class="group-comment-content">
+			<div class="finish-comment">
+				 <div class="content-comment">
+  				<div><img src="./main page of the site/img/fon/famale.png" alt="avatar"></div>
+							<div class="fd-c">
+								<div><p class="fs-18">Марина Белова г. Москва</p></div>
+								<div><p class="fs-16">Качество товара отличное, доставка быстрая.</p></div>
+							</div>
+				 </div>
+				 <div class="content-comment">
+  				<div><img src="./main page of the site/img/fon/male.png" alt="avatar"></div>
+							<div class="fd-c">
+								<div><p class="fs-18">Алексей Фролов г. Воронеж</p></div>
+								<div><p class="fs-16">Пришла посылка быстро, доставка была курьером.</p></div>
+							</div>
+				 </div>
+			</div>
+			<div class="your-comment">
+				<div class="your-content-comment">
+  				<div class="img-c"><img style="background-color:rgb(139, 139, 139);" src="./main page of the site/img/fon/download.png" alt="download"></div>
+							<div class="type-fd-c">
+								<div class="fd-r">
+									<div>
+										<form>
+									<div class="comment-input-1">
+									<input type="text" style="width:100%;" placeholder="ФИО"/>
+									</div>
+									</form>
+									</div>
+									<div>
+										<form>
+									<div class="comment-input-2">
+									<input type="text" style="width:100%;" placeholder="Город"/>
+									</div>
+									</form>
+									</div>
+								</div>
+								<div>
+									<form>
+<div class="comment-input-3">
+<input type="text" style="width:75%;" placeholder="Ваш комментарий"/>
+<button type="reset" class="b-ct">Отправить</button>
+</div>
+</form>
+								</div>
+							</div>
+				 </div>
+			</div>
+		</div>
+	</div>
+</div>
 	<div class="footer">
 		<div class="Container">
 			<div class="footer-row">
@@ -255,7 +339,7 @@
 					<div class="footer-coppyright-name">© Кошкаровский Никита</div>
 					<p class="foot-cops">Владелец магазина SportShop.</p>
 				</div>
-				<div class="footer-icons footer-col" id="img-p">
+				<div class="footer-icons footer-col">
 					<p>Наши профили в социальных сетях:</p>
 					<div class="footer-icons-row">
 						<a target="_blank" href="https://t.me/insawiq">
@@ -292,12 +376,10 @@
 						</div>
 						<a href="#!" class="outside-triggered"></a>
 					</div>
-
 					<p>Напишите нам и мы ответим на Ваши вопросы.</p>
 				</div>
 			</div>
 		</div>
 	</div>
 </body>
-
 </html>
