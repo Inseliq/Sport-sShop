@@ -950,17 +950,30 @@ a.buy-bat {
   border: none;
   background-color: rgb(220, 220, 220);
   color: black;
+  border-radius: 10px;
 }
 
 .b-ct:hover {
   border: none;
   background-color: rgb(142, 142, 142);
   color: black;
+  border-radius: 17.5px;
 }
 
 .b-ct:active {
-  border: none;
+  border: 1px red solid;
   background-color: rgb(56, 56, 56);
   color: rgb(211, 211, 211);
+  border-radius: 25px;
+}
+
+.input-comment {
+border: none;
+border-radius: 25px;
+}
+
+.input-comment-2 {
+  border: none;
+border-radius: 25px;
 }
 /* finish comment */
